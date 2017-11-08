@@ -28,7 +28,7 @@
         }).text();
         parent.find(".quote_link").text("Quote");
         chapter = link.split("#")[1];
-        final_text = "Quoting `C11`, chapter [ÎåÎá" + chapter +"]("+link+" )\n> " + $.trim(text_to_show);
+        final_text = "Quoting `C11`, chapter [§" + chapter +"]("+link+" )\n> " + $.trim(text_to_show);
         GM_setClipboard(final_text.replace(/''/g, '"'));
     }
 
